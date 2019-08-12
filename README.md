@@ -15,6 +15,7 @@ const put = async () => {
     TableName: "table",
     Item: {
       id: "ID",
+      value: "VALUE",
     },
     ConditionExpression: "attribute_not_exists(id)",
   });
@@ -46,6 +47,7 @@ const put = async () => {
     TableName: "table",
     Item: {
       id: "ID",
+      value: "VALUE",
     },
     ConditionExpression: "attribute_not_exists(id)",
   });
