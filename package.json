@@ -1,0 +1,25 @@
+{
+  "name": "getto-aws_dynamodb",
+  "version": "0.0.0",
+  "description": "aws_dynamodb : getto-psycher vendor plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getto-systems/node-getto-aws_dynamodb.git"
+  },
+  "author": "shun@getto.systems",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/getto-systems/node-getto-aws_dynamodb/issues"
+  },
+  "homepage": "https://github.com/getto-systems/node-getto-aws_dynamodb#readme",
+  "dependencies": {
+    "aws-sdk": "^2.507.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
