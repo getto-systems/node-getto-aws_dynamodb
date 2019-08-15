@@ -23,19 +23,9 @@ const init = ({region}) => {
     });
 
     /**
-     * struct : {
-     *   TableName: table name
-     *   Item: Item struct
-     *   ConditionExpression: condition expression
-     * }
+     * params : see AWS.DynamoDB.DocumentClient#put
      */
-    const put = ({TableName, Item, ConditionExpression}) => {
-      const params = {
-        TableName,
-        Item,
-        ConditionExpression,
-      };
-
+    const put = (params) => {
       return new Promise((resolve, reject) => {
         client.put(params, (err, data) => {
           if (err) {
@@ -48,21 +38,9 @@ const init = ({region}) => {
     };
 
     /**
-     * struct : {
-     *   TableName: table name
-     *   Key: Item struct
-     *   ConsistentRead: condition expression
-     *   ProjectionExpression: prejection expression
-     * }
+     * params : see AWS.DynamoDB.DocumentClient#get
      */
-    const get = ({TableName, Key, ConsistentRead, ProjectionExpression}) => {
-      const params = {
-        TableName,
-        Key,
-        ConsistentRead,
-        ProjectionExpression,
-      };
-
+    const get = (params) => {
       return new Promise((resolve, reject) => {
         client.get(params, (err, data) => {
           if (err) {
