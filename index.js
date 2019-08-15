@@ -47,8 +47,36 @@ const init = ({region}) => {
       });
     };
 
+    /**
+     * struct : {
+     *   TableName: table name
+     *   Key: Item struct
+     *   ConsistentRead: condition expression
+     *   ProjectionExpression: prejection expression
+     * }
+     */
+    const get = ({TableName, Key, ConsistentRead, ProjectionExpression}) => {
+      const params = {
+        TableName,
+        Item,
+        ConsistentRead,
+        ProjectionExpression,
+      };
+
+      return new Promise((resolve, reject) => {
+        client.get(params, (err, data) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(data);
+          }
+        });
+      });
+    };
+
     return {
       put,
+      get,
     };
   };
 
