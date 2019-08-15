@@ -54,6 +54,14 @@ const put = async () => {
 };
 ```
 
+### methods
+
+- put
+- get
+- query
+
+same api as dynamodb document client
+
 ### Install
 
 ```bash
