@@ -24,10 +24,6 @@ const init = ({region}) => {
       region: region,
     });
 
-    const put = call_client("put");
-    const get = call_client("get");
-    const query = call_client("query");
-
     const call_client = (method) => {
       return (params) => {
         return new Promise((resolve, reject) => {
@@ -41,6 +37,10 @@ const init = ({region}) => {
         });
       };
     };
+
+    const put = call_client("put");
+    const get = call_client("get");
+    const query = call_client("query");
 
     return {
       put,
