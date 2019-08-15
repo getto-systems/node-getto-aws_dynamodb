@@ -8,13 +8,15 @@ exports.init = (struct) => init(struct);
  * }
  *
  * returns {
- *   getJSON: async () => get secret string value as json
+ *   documentClient : AWS.DynamoDB.DocumentClient
  * }
  */
 const init = ({region}) => {
   /**
    * returns {
    *   put : async (struct) => put item
+   *   get : async (struct) => get item
+   *   query : async (struct) => query
    * }
    */
   const documentClient = () => {
@@ -22,39 +24,28 @@ const init = ({region}) => {
       region: region,
     });
 
-    /**
-     * params : see AWS.DynamoDB.DocumentClient#put
-     */
-    const put = (params) => {
-      return new Promise((resolve, reject) => {
-        client.put(params, (err, data) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(data);
-          }
-        });
-      });
-    };
+    const put = call_client("put");
+    const get = call_client("get");
+    const query = call_client("query");
 
-    /**
-     * params : see AWS.DynamoDB.DocumentClient#get
-     */
-    const get = (params) => {
-      return new Promise((resolve, reject) => {
-        client.get(params, (err, data) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(data);
-          }
+    const call_client = (method) => {
+      return (params) => {
+        return new Promise((resolve, reject) => {
+          client[method](params, (err, data) => {
+            if (err) {
+              reject(err);
+            } else {
+              resolve(data);
+            }
+          });
         });
-      });
+      };
     };
 
     return {
       put,
       get,
+      query,
     };
   };
 
