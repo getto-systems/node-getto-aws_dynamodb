@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 1.3.0
+
+fix: call_client See merge request getto-systems-labo/node/getto-aws_dynamodb!5
+
+
 ## Version : 1.2.0
 
 add: query See merge request getto-systems-labo/node/getto-aws_dynamodb!4
