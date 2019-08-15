@@ -1,6 +1,6 @@
 {
   "name": "getto-aws_dynamodb",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "aws_dynamodb : getto-psycher vendor plugin",
   "main": "index.js",
   "scripts": {
