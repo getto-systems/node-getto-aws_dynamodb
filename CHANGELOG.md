@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 1.1.0
+
+add: get See merge request getto-systems-labo/node/getto-aws_dynamodb!3
+
+
 ## Version : 1.0.0
 
 production ready! See merge request getto-systems-labo/node/getto-aws_dynamodb!2
