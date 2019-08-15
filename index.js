@@ -58,7 +58,7 @@ const init = ({region}) => {
     const get = ({TableName, Key, ConsistentRead, ProjectionExpression}) => {
       const params = {
         TableName,
-        Item,
+        Key,
         ConsistentRead,
         ProjectionExpression,
       };
