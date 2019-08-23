@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 1.3.2
+
+- fix: notify : See merge request getto-systems-labo/node/getto-aws_dynamodb!7
+
+
 ## Version : 1.3.1
 
 fix: readme See merge request getto-systems-labo/node/getto-aws_dynamodb!6
