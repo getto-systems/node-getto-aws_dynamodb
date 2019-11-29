@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Version : 1.3.3
+
+- fix: gitlab-ci : See merge request getto-systems-base/labo/node/getto-aws_dynamodb!10
+- fix: set-window-title : See merge request getto-systems-base/labo/node/getto-aws_dynamodb!9
+- add: git-maint-repo : See merge request getto-systems-base/labo/node/getto-aws_dynamodb!8
+
+
 ## Version : 1.3.2
 
 - fix: notify : See merge request getto-systems-labo/node/getto-aws_dynamodb!7
