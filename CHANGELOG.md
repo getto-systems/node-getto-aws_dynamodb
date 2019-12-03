@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Version : 1.3.4
+
+- fix: gitlab-ci : See merge request getto-systems-base/labo/node/getto-aws_dynamodb!12
+
+
 ## Version : 1.3.3
 
 - fix: gitlab-ci : See merge request getto-systems-base/labo/node/getto-aws_dynamodb!10
